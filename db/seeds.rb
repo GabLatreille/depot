@@ -5,7 +5,7 @@ Product.create!(title: 'Product 1',
     %{<p>
       <em>This is the first product.
       </p>},
-  image_url: 'http://tarotnumerologiczny.pl/wp-content/uploads/Wibracja-numerologiczna-liczby-1..jpg',
+  image_url: 'http://veastrology.com/images/num1.jpg',
 price: 1.00)
 #...
 Product.create!(title: 'Product 2',
@@ -21,5 +21,5 @@ Product.create!(title: 'Product 3',
     %{<p>
       <em>This could very well be the third product
       </p>},
-  image_url: 'https://imgc.allpostersimages.com/img/print/posters/number-3-birthday-party-lifesize-standup_a-G-5030447-0.jpg',
+  image_url: 'http://veastrology.com/images/num3.jpg',
 price: 3.00)
