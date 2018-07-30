@@ -9,9 +9,7 @@ class PurchaseOrderPayType extends React.Component {
             {I18n.t("orders.form.purchase_order_pay_type.po_number")}
           </label>
 
-          <input type="password"
-                 name="order[po_number]" 
-                 id="order_po_number" />
+          <input type="password" name="order[po_number]" id="order_po_number" />
         </div>
       </div>
     );

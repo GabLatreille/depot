@@ -8,9 +8,9 @@
   padding: 0;
 }
 header.main {
-  text-align: center; // center on mobile
+  text-align: center;
   @media (min-width: 30em) {
-    text-align: left; // left align on desktop
+    text-align: left;
   }
   background: #282;
   margin: 0;
@@ -35,22 +35,22 @@ header.main {
 
   display: flex;
   display: -webkit-flex;
-  flex-direction: column; // mobile is horizontally laid out
+  flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
 
   @media (min-width: 30em) {
-    flex-direction: row;  // desktop is vertically laid out
+    flex-direction: row;
     -webkit-box-orient: horizontal;
   }
 
   nav {
     padding-bottom: 1em;
     background: #141;
-    text-align: center;  // mobile has centered nav
+    text-align: center;
     @media (min-width: 30em) {
-      text-align: left; // desktop nav is left-aligned
-      padding: 1em;     // and needs more padding
+      text-align: left;
+      padding: 1em;
     }
 
     #cart {
@@ -63,7 +63,7 @@ header.main {
         margin: 1em;
         padding: 1.414em;
         @media (min-width: 30em) {
-          margin: 0; // desktop doesn't need this margin
+          margin: 0;
         }
       }
     }
@@ -73,8 +73,6 @@ nav.logged_in_nav {
   padding: 0.354em 0;
   margin-top: 0.354em;
   input[type="submit"] {
-    // Make the logout button look like a
-    // link, so it matches the nav style
     background: none;
     border: none;
     color: #bfb;
@@ -94,7 +92,7 @@ nav.logged_in_nav {
       margin: 0;
       padding: 0;
       @media (min-width: 30em) {
-        padding-right: 1em; // give desktop some extra space
+        padding-right: 1em;
       }
       li {
         margin: 0;
@@ -117,7 +115,6 @@ nav.logged_in_nav {
   }
 }
 
-//
 .depot_form {
   padding: 0 1em;
   h1 {
@@ -156,7 +153,6 @@ nav.logged_in_nav {
   input[type="submit"]:hover {
     background-color: #9d9;
   }
-  // Also, clean up the error styling
   #error_explanation {
     background-color: white;
     border-radius: 1em;
@@ -194,7 +190,6 @@ nav.logged_in_nav {
     }
   }
 }
-//
 
 .locale {
   float: right;

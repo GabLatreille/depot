@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   
   protected
-
     def authorize
       if request.format == Mime[:html]
         unless User.find_by(id: session[:user_id])
@@ -23,8 +22,7 @@ class ApplicationController < ActionController::Base
         if I18n.available_locales.map(&:to_s).include?(params[:locale])
           I18n.locale = params[:locale]
         else
-          flash.now[:notice] = 
-            "#{params[:locale]} translation not available"
+          flash.now[:notice] = "#{params[:locale]} translation not available"
           logger.error flash.now[:notice]
         end
       end

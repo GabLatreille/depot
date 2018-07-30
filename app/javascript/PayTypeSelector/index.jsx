@@ -1,8 +1,8 @@
 import React from 'react'
 
-import NoPayType            from './NoPayType';
-import CreditCardPayType    from './CreditCardPayType';
-import CheckPayType         from './CheckPayType';
+import NoPayType from './NoPayType';
+import CreditCardPayType from './CreditCardPayType';
+import CheckPayType from './CheckPayType';
 import PurchaseOrderPayType from './PurchaseOrderPayType';
 
 class PayTypeSelector extends React.Component {
@@ -32,7 +32,7 @@ class PayTypeSelector extends React.Component {
             {I18n.t("orders.form.pay_type")}
           </label>
 
-          <select id="pay_type" onChange={this.onPayTypeSelected} 
+          <select id="pay_type" onChange={this.onPayTypeSelected}
             name="order[pay_type]">
             <option value="">
               {I18n.t("orders.form.pay_prompt_html")}

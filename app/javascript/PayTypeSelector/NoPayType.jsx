@@ -5,4 +5,5 @@ class NoPayType extends React.Component {
     return (<div></div>);
   }
 }
+
 export default NoPayType

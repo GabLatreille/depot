@@ -9,9 +9,6 @@
       padding: 1em;
       margin: 0;
       border-bottom: solid thin #ddd;
-
-      // This makes sure our <li> has enough height
-      // to hold the entire image, since it's floated
       &::after {
         clear: both;
         content: " ";
@@ -24,7 +21,6 @@
         margin-bottom: 1em;
         box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
       }
-//
       .price {
         font-size: 1.414em;
       }
@@ -43,6 +39,5 @@
         background-color: #141;
       }
     }
-//
   }
 }
