@@ -3,16 +3,16 @@ Rails.application.configure do
   config.webpacker.check_yarn_integrity = true
   # Settings specified here will take precedence over those in config/application.rb.
 
-  config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = {
-      address:        "smtp.gmail.com",
-      port:           587, 
-      domain:         "domain.of.sender.net",
-      authentication: "plain",
-      user_name:      "dave",
-      password:       "secret",
-      enable_starttls_auto: true
-    } 
+  config.action_mailer.delivery_method = :test
+    # config.action_mailer.smtp_settings = {
+    #   address:        "smtp.gmail.com",
+    #   port:           587, 
+    #   domain:         "domain.of.sender.net",
+    #   authentication: "plain",
+    #   user_name:      "dave",
+    #   password:       "secret",
+    #   enable_starttls_auto: true
+    # } 
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
@@ -77,15 +77,3 @@ Monorail.configure do |config|
   config.registry = Monorail::FileRegistry
   config.producer = Monorail::Producers::MemoryProducer
 end
-# Depot::Application.configure do 
-#   config.action_mailer.delivery_method = :smtp
-#   #   config.action_mailer.smtp_settings = {
-#   #     address:        "smtp.gmail.com",
-#   #     port:           587, 
-#   #     domain:         "domain.of.sender.net",
-#   #     authentication: "plain",
-#   #     user_name:      "dave",
-#   #     password:       "secret",
-#   #     enable_starttls_auto: true
-#   #   } 
-# end
